@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+  padding: 0 ;
+  margin: 0;
+}
+:root {
+  --mainColor : #00172f ; 
+  --secondColor : #f9c747 ; 
+}
+body {
+  background-color: var(--mainColor) !important;
+  overflow-x: hidden !important;
+  color: white;
+  text-transform: capitalize;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+ul {
+  list-style-type: none;
+}
+.dropdown-toggle::after {
+  color: white !important;
+}
