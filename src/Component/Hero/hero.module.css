@@ -1,65 +1,82 @@
 .btn {
-    border: none;
-    background-color: var(--secondColor);
-    padding: 7px 15px;
-    color: var(--mainColor) !important;
-    height: 50px;
-    z-index: 3;
-    position: relative;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-}
-.btn::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    z-index: -1;
-    background-color: var(--mainColor);
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-}
-.btn::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 0;
-    z-index: -1;
-    background-color: var(--secondColor);
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-}
-.btn:hover::before {
-    width: 100%;
+  border: none;
+  background-color: var(--secondColor);
+  padding: 7px 15px;
+  color: var(--mainColor) !important;
+  height: 50px;
+  z-index: 3;
+  position: relative;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
-.icon , .btnText {
-    color: var(--mainColor) !important;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  background-color: var(--mainColor);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
-.btn:hover .icon , .btn:hover .btnText {
-    color: white !important;
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  background-color: var(--secondColor);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.icon,
+.btnText {
+  color: var(--mainColor) !important;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.btn:hover .icon,
+.btn:hover .btnText {
+  color: white !important;
+}
+
 .btn:focus-within::after {
-    width: 100%;
+  width: 100%;
 }
-.btn:focus-within .icon , .btn:focus-within .btnText {
-    color: var(--mainColor) !important;
+
+.btn:focus-within .icon,
+.btn:focus-within .btnText {
+  color: var(--mainColor) !important;
+}
+
+.btn:hover .icon {
+  transform: translateX(-10px);
+  -webkit-transform: translateX(-10px);
+  -moz-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  -o-transform: translateX(-10px);
 }
