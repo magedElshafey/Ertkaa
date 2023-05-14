@@ -27,3 +27,6 @@ ul {
 .dropdown-toggle::after {
   color: white !important;
 }
+.lh {
+  line-height: 2;
+}

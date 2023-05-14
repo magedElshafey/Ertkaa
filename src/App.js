@@ -2,12 +2,16 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import Nav from "./Component/layout/navbar/Nav";
 import { useTranslation } from "react-i18next";
+import Hero from "./Component/Hero/Hero";
 
 const App = () => {
   const [t, i18n] = useTranslation();
   // handle animation
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      offset: 0,
+      duration: 1200,
+    });
   }, []);
   // handle page direction
   useEffect(() => {
@@ -21,6 +25,7 @@ const App = () => {
   return (
     <div>
       <Nav />
+      <Hero />
     </div>
   );
 };

@@ -143,6 +143,46 @@ const Nav = () => {
             </div>
           </div>
           <hr className={style.line} />
+          <div className="px-3 py-3 d-flex justify-content-between align-items-center">
+            <button className={style.btn}>
+              <a className={style.btnText} href="https://wa.me/+201022153359">
+                {t("btnNav")}
+              </a>
+            </button>
+            <div className="dropdown ">
+              <div
+                className=" dropdown-toggle d-flex align-items-center gap-2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                role="button"
+              >
+                <img alt="lang/img" src={langIcon} loading="lazy" />
+                <p className="text-white p-0 m-0 fs-4">{i18n.language}</p>
+              </div>
+
+              <ul className="dropdown-menu">
+                <li className={`dropdown-item ${style.lang}`}>
+                  {i18n.language}
+                </li>
+                {i18n.language === "ar" ? (
+                  <li
+                    onClick={() => i18n.changeLanguage("en")}
+                    className={`dropdown-item ${style.lang}`}
+                  >
+                    en
+                  </li>
+                ) : (
+                  <li
+                    onClick={() => i18n.changeLanguage("ar")}
+                    className={`dropdown-item ${style.lang}`}
+                  >
+                    ar
+                  </li>
+                )}
+              </ul>
+            </div>
+          </div>
+          <hr className={style.line} />
           <div className="pt-3 d-flex justify-content-center align-items-center gap-2">
             {socialMedia.map((item, index) => (
               <a target="_blank" href={item.path}>
