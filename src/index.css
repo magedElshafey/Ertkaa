@@ -8,7 +8,7 @@
   --secondColor : #f9c747 ; 
 }
 body {
-  background-color: var(--mainColor) !important;
+  background: linear-gradient(to bottom ,  #00172f 75% , #103160) !important;
   overflow-x: hidden !important;
   color: white;
   text-transform: capitalize;
@@ -30,3 +30,21 @@ ul {
 .lh {
   line-height: 2;
 }
+.scrolling-text {
+    animation: scroll-left 20s linear infinite;
+    -webkit-animation: scroll-left 20s linear infinite;
+}
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+}
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }

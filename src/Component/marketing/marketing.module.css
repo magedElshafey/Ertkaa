@@ -1,0 +1,15 @@
+.box {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    background-color: var(--secondColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

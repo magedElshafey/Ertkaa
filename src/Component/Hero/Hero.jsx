@@ -18,13 +18,6 @@ const Hero = () => {
   return (
     <div className="container pt-5 mt-5">
       <div className="row align-items-center justify-content-center">
-        <div
-          data-aos="zoom-in"
-          data-aos-delay="400"
-          className="col-12 col-md-6 mb-4 mb-md-0"
-        >
-          <Lottie options={defaultOptions} height={400} width={320} />
-        </div>
         <div className="col-12 col-md-6 mb-4 mb-md-0">
           <h1
             data-aos="fade-up"
@@ -54,6 +47,13 @@ const Hero = () => {
               <AiOutlineArrowRight className={style.icon} size={15} />
             )}
           </button>
+        </div>
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="400"
+          className="col-12 col-md-6 mb-4 mb-md-0"
+        >
+          <Lottie options={defaultOptions} height={400} width="100%" />
         </div>
       </div>
     </div>
