@@ -36,7 +36,7 @@ const App = () => {
       <Stats />
       <About />
       <Marketing />
-      <ScrollTitle />
+     
       <Serv />
       <Contact />
       <Footer />

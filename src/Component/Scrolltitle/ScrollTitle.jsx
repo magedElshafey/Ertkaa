@@ -8,7 +8,7 @@ const ScrollTitle = () => {
     <div className="mt-5 pt-5">
       <div className={style.mainDiv}>
         <div
-          className={`w-100 scrolling-text ${style.content} d-flex align-items-center gap-5`}
+          className={`w-100 scrolling-text  d-flex align-items-center gap-5`}
         >
           <p className="fw-bolder m-0 p-0 fs-4">{t("firstText")}</p>
           <AiFillStar className={style.icon} size={30} />

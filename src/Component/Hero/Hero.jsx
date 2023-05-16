@@ -17,11 +17,13 @@ const Hero = () => {
 
   return (
     <div className="container pt-5 mt-5">
-      <div className="row align-items-center justify-content-center">
+      <div
+        data-aos="fade-down"
+        data-aos-delay="400"
+        className="row pt-5 mt-5 align-items-center justify-content-center"
+      >
         <div className="col-12 col-md-6 mb-4 mb-md-0">
           <h1
-            data-aos="fade-up"
-            data-aos-delay="400"
             className={`mb-4 fs-2 text-white fw-bolder text-center ${
               i18n.language === "ar" ? "text-md-end" : "text-md-start"
             } lh`}
@@ -29,8 +31,6 @@ const Hero = () => {
             {t("heroTitle")}
           </h1>
           <p
-            data-aos="fade-down"
-            data-aos-delay="500"
             className={`text-white-50 lh text-center mb-3 ${
               i18n.language === "ar" ? "text-md-end" : "text-md-start"
             }`}

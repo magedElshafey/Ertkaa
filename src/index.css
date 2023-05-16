@@ -32,22 +32,25 @@ ul {
   line-height: 2;
 }
 .scrolling-text {
-    white-space: nowrap;
-    animation: scroll 8s linear infinite;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    animation: scroll-left 8s linear infinite;
-    -webkit-animation: scroll-left 8s linear infinite;
+  white-space: nowrap;
+  animation: scroll-left 8s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  -webkit-transform: translate(-50% , -50%);
+  -moz-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  -o-transform: translate(-50% , -50%);
 }
   
   @keyframes scroll-left {
     0% {
-      transform: translateX(5px);
-      -webkit-transform: translateX(5px);
-      -moz-transform: translateX(5px);
-      -ms-transform: translateX(5px);
-      -o-transform: translateX(5px);
+      transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -o-transform: translateX(100%);
 }
   
     100% {
