@@ -9,5 +9,23 @@
 	"firstText" : "We are a digital solutions agency" , 
 	"secondText" : "Supported by over 20 years of experience" , 
 	"thirdText" : "We offer innovative and reliable digital solutions and services" , 
-	"fourthText" : "We are proud to support hundreds of companies"
+	"fourthText" : "We are proud to support hundreds of companies" , 
+	"servicesTitle" : "Are you ready to develop your company?" , 
+	"servicesDesc" : "servicesDesc"  , 
+	"contactTitle" : "contact us"  , 
+	"name" : "name" , 
+	"phone" : "phone" , 
+	"email" : "email" , 
+	"msg" : "message" , 
+	"reg" : "regester now"  , 
+	"site" : "site map"  , 
+	"home" : "home" , 
+	"about" : "about" , 
+	"serv" : "services" , 
+	"behance" : "behance" , 
+	"hotline" : "hotline"  , 
+	"copyRight" : "Copy Right" , 
+	"allRight" : "All Right Reserved to"
+	
+	
 }

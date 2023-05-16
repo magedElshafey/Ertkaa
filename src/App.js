@@ -7,6 +7,9 @@ import Stats from "./Component/stats/Stats";
 import About from "./Component/about/About";
 import Marketing from "./Component/marketing/Marketing";
 import ScrollTitle from "./Component/Scrolltitle/ScrollTitle";
+import Serv from "./Component/Services/Serv";
+import Contact from "./Component/contact/Contact";
+import Footer from "./Component/layout/footer/Footer";
 
 const App = () => {
   const [t, i18n] = useTranslation();
@@ -34,6 +37,9 @@ const App = () => {
       <About />
       <Marketing />
       <ScrollTitle />
+      <Serv />
+      <Contact />
+      <Footer />
     </div>
   );
 };

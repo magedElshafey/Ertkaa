@@ -1,0 +1,6 @@
+.mainContainer {
+    width: 300px;
+}
+.step {
+    color: var(--secondColor);
+}

@@ -19,7 +19,7 @@ const Marketing = () => {
   return (
     <div className="container pt-5 mt-5">
       <div
-        className="row justify-content-center align-items-center"
+        className="row align-items-center justify-content-center"
         data-aos="fade-up"
         data-aos-delay="500"
         data-aos-offset="100"
@@ -32,14 +32,18 @@ const Marketing = () => {
           <h3
             data-aos="zoom-in"
             data-aos-delay="400"
-            className="font-bolder fs-2 text-white mb-4"
+            className={`font-bolder fs-2 text-white mb-4 text-center ${
+              i18n.language === "ar" ? "text-md-end" : "text-md-end"
+            }`}
           >
             {t("markettingTitle")}
           </h3>
           <p
             data-aos="fade-up"
             data-aos-delay="500"
-            className="lh text-white-50 mb-5"
+            className={`lh text-white-50 mb-5 text-center ${
+              i18n.language === "ar" ? "text-md-end" : "text-md-end"
+            }`}
           >
             {t("aboutUs")}
           </p>
@@ -47,7 +51,7 @@ const Marketing = () => {
             {marketDetails.map((item, index) => (
               <div
                 key={index}
-                className="col-12 mb-3 col-sm-6 d-flex align-items-center gap-2 "
+                className={`col-12 mb-3 col-sm-6 d-flex align-items-center gap-2 `}
               >
                 <div className={style.box}>
                   <GrFormCheckmark size={20} />

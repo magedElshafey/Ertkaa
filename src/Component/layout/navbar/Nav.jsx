@@ -6,6 +6,7 @@ import logo from "../../../assets/logo.jpg";
 import langIcon from "../../../assets/lang.svg";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { socialMedia } from "../../../fakers/data";
+import SocialMedia from "../../utilites/SocialMedia";
 const Nav = () => {
   const [t, i18n] = useTranslation();
   const [showSideBar, setShowSideBar] = useState(false);
@@ -26,16 +27,12 @@ const Nav = () => {
           {navLinks.map((item, index) => (
             <li key={index}>
               {i18n.language === "ar" ? (
-                <a
-                  className={`pb-3 ${style.navLinks}`}
-                  href={item.path}
-                  target="_blank"
-                >
+                <a className={`link pb-3 ${style.navLinks}`} href={item.path}>
                   {item.ArabicTitle}
                 </a>
               ) : (
                 <a
-                  className={`pb-3 ${style.navLinks}`}
+                  className={`link pb-3 ${style.navLinks}`}
                   href={item.path}
                   target="_blank"
                 >
@@ -47,7 +44,10 @@ const Nav = () => {
         </ul>
         {/*button*/}
         <button className={style.btn}>
-          <a className={style.btnText} href="https://wa.me/+201022153359">
+          <a
+            className={`link ${style.btnText}`}
+            href="https://wa.me/+201022153359"
+          >
             {t("btnNav")}
           </a>
         </button>
@@ -119,18 +119,18 @@ const Nav = () => {
             <div className="d-flex justify-content-center">
               <ul className="fw-bold fs-5 mt-5 pt-5">
                 {navLinks.map((item, index) => (
-                  <li className={`py-3 ${style.mobileLink}`} key={index}>
+                  <li
+                    onClick={() => setShowSideBar(false)}
+                    className={`py-3 ${style.mobileLink}`}
+                    key={index}
+                  >
                     {i18n.language === "ar" ? (
-                      <a
-                        className={`${style.navLinks}`}
-                        href={item.path}
-                        target="_blank"
-                      >
+                      <a className={`link ${style.navLinks}`} href={item.path}>
                         {item.ArabicTitle}
                       </a>
                     ) : (
                       <a
-                        className={`pb-3 ${style.navLinks}`}
+                        className={`link pb-3 ${style.navLinks}`}
                         href={item.path}
                         target="_blank"
                       >
@@ -145,7 +145,10 @@ const Nav = () => {
           <hr className={style.line} />
           <div className="px-3 py-3 d-flex justify-content-between align-items-center">
             <button className={style.btn}>
-              <a className={style.btnText} href="https://wa.me/+201022153359">
+              <a
+                className={`link ${style.btnText}`}
+                href="https://wa.me/+201022153359"
+              >
                 {t("btnNav")}
               </a>
             </button>
@@ -184,11 +187,7 @@ const Nav = () => {
           </div>
           <hr className={style.line} />
           <div className="pt-3 d-flex justify-content-center align-items-center gap-2">
-            {socialMedia.map((item, index) => (
-              <a target="_blank" href={item.path}>
-                <img alt="social/icon" src={item.icon} loading="lazy" />
-              </a>
-            ))}
+            <SocialMedia />
           </div>
         </div>
       </div>

@@ -12,12 +12,13 @@ body {
   overflow-x: hidden !important;
   color: white;
   text-transform: capitalize;
+  font-family: 'Cairo', sans-serif !important;
 
 }
 html {
   scroll-behavior: smooth;
 }
-a {
+.link {
   text-decoration: none !important;
   color: white !important;
 }
@@ -31,6 +32,11 @@ ul {
   line-height: 2;
 }
 .scrolling-text {
+  white-space: nowrap; 
+    animation: scroll 10s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     animation: scroll-left 20s linear infinite;
     -webkit-animation: scroll-left 20s linear infinite;
 }

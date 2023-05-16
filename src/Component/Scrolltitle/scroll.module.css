@@ -1,10 +1,13 @@
 .mainDiv {
     min-width: 100vw;
+    overflow: hidden !important;
+  
     height: 100px;
     background-color: #3657cd;
     color: white !important;
     font-weight: bolder;
     position: relative;
+     margin: 0 auto;
     transform: rotate(-5deg);
     -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
@@ -12,13 +15,7 @@
     -o-transform: rotate(-5deg);
 }
 .content {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+    
 }
 .icon {
     color: var(--secondColor);

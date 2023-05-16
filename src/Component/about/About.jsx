@@ -5,7 +5,7 @@ import { about } from "../../fakers/data";
 const About = () => {
   const [t, i18n] = useTranslation();
   return (
-    <div className="container pt-5 mt-5">
+    <div id="about" className="container pt-5 mt-5">
       <h2
         data-aos="fade-up"
         data-aos-delay="400"
