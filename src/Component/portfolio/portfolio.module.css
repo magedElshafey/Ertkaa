@@ -1,15 +1,114 @@
-.mainContainer {
-      background-color: #f0f0f0;
-      cursor: pointer;
-        transition: 0.5s;
-        height: 550px;
-
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
+.slider {
+  cursor: pointer;
 }
-.mainContainer:hover {
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
+.imgContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.imgContainer::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0c1145;
+  content: "";
+  opacity: 0.4;
+  z-index: 1;
+  transition: all 0.3s;
+  visibility: visible;
+}
+
+.img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.slider:hover .img {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+.borderLeft {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+
+.borderLeft::before {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  height: 1px;
+  width: 0;
+  background: #fff;
+  content: "";
+  transition: all 0.3s;
+}
+
+.borderLeft:after {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  height: 0;
+  width: 1px;
+  background: #fff;
+  content: "";
+  transition: all 0.3s;
+}
+
+.borderRight {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+
+.borderRight::before {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  height: 1px;
+  width: 0;
+  background: #fff;
+  content: "";
+  transition: all 0.3s;
+}
+
+.borderRight:after {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+  height: 0;
+  width: 1px;
+  background: #fff;
+  content: "";
+  transition: all 0.3s;
+}
+.slider:hover .borderLeft::before {
+    width: 160px;
+}
+.slider:hover .borderLeft::after {
+  height: 160px;
+}
+.slider:hover .borderRight::before {
+  width: 160px;
+}
+.slider:hover .borderRight::after {
+  height: 160px;
 }
