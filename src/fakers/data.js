@@ -12,6 +12,13 @@ import shop from "../assets/about/e-commerce.png";
 import seo from "../assets/seo.png";
 import social from "../assets/social-strategy.png";
 import market from "../assets/graph.png";
+// portfolio
+import port1 from "../assets/port-01.jpg";
+import port2 from "../assets/port-02 (3).jpg";
+import port3 from "../assets/port-03.jpg";
+import port4 from "../assets/port-04.jpg";
+import port5 from "../assets/port-05.jpg";
+import port6 from "../assets/port-06.jpg";
 export const navLinks = [
   {
     title: "Home",
@@ -28,7 +35,11 @@ export const navLinks = [
     ArabicTitle: "من نحن",
     path: "#about",
   },
-
+  {
+    title: "Portfolio",
+    ArabicTitle: "اعمالنا",
+    path: "#port",
+  },
   {
     title: "Behance",
     ArabicTitle: "بيهانس",
@@ -146,6 +157,63 @@ export const marketDetails = [
     ArabicTitle: "24/7 دعم فني",
   },
 ];
+export const port = [
+  {
+    img: port1,
+    title: "product one",
+    arabicTitle: "المنتج الاول",
+    desc: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    arabicDesc:
+      ". يُستخدم عادةً في تصميم الغرافيك وتخطيط الصفحة وتصميم النصوص. يعود أصله إلى العام 1500، حيث استخدم الطابعون نوعًا معينًا من النص لتعبئة المساحات الفارغة في العروض الطباعية. ليس له أي معنى ",
+    delay: "400",
+  },
+  {
+    img: port2,
+    title: "product two",
+    arabicTitle: "المنتج التاني",
+    desc: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    arabicDesc:
+      ". يُستخدم عادةً في تصميم الغرافيك وتخطيط الصفحة وتصميم النصوص. يعود أصله إلى العام 1500، حيث استخدم الطابعون نوعًا معينًا من النص لتعبئة المساحات الفارغة في العروض الطباعية. ليس له أي معنى ",
+    delay: "500",
+  },
+  {
+    img: port3,
+    title: "product three",
+    arabicTitle: "المنتج التالت",
+    desc: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    arabicDesc:
+      ". يُستخدم عادةً في تصميم الغرافيك وتخطيط الصفحة وتصميم النصوص. يعود أصله إلى العام 1500، حيث استخدم الطابعون نوعًا معينًا من النص لتعبئة المساحات الفارغة في العروض الطباعية. ليس له أي معنى ",
+    delay: "600",
+  },
+  {
+    img: port4,
+    title: "product four",
+    arabicTitle: "المنتج الرابغ",
+    desc: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    arabicDesc:
+      ". يُستخدم عادةً في تصميم الغرافيك وتخطيط الصفحة وتصميم النصوص. يعود أصله إلى العام 1500، حيث استخدم الطابعون نوعًا معينًا من النص لتعبئة المساحات الفارغة في العروض الطباعية. ليس له أي معنى ",
+    delay: "700",
+  },
+  {
+    img: port5,
+    title: "product five",
+    arabicTitle: "المنتج الخامس",
+    desc: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    arabicDesc:
+      ". يُستخدم عادةً في تصميم الغرافيك وتخطيط الصفحة وتصميم النصوص. يعود أصله إلى العام 1500، حيث استخدم الطابعون نوعًا معينًا من النص لتعبئة المساحات الفارغة في العروض الطباعية. ليس له أي معنى ",
+    delay: "800",
+  },
+  {
+    img: port6,
+    title: "product six",
+    arabicTitle: "المنتج السادس",
+    desc: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+    arabicDesc:
+      ". يُستخدم عادةً في تصميم الغرافيك وتخطيط الصفحة وتصميم النصوص. يعود أصله إلى العام 1500، حيث استخدم الطابعون نوعًا معينًا من النص لتعبئة المساحات الفارغة في العروض الطباعية. ليس له أي معنى ",
+    delay: "900",
+  },
+];
+
 export const serv = [
   {
     img: social,

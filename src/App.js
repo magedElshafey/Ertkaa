@@ -12,6 +12,7 @@ import Contact from "./Component/contact/Contact";
 import Footer from "./Component/layout/footer/Footer";
 import FixedBtn from "./Component/utilites/fixedBtn/FixedBtn";
 import Meta from "./Component/utilites/meta/Meta";
+import Portfolio from "./Component/portfolio/Portfolio";
 
 const App = () => {
   const [t, i18n] = useTranslation();
@@ -39,6 +40,7 @@ const App = () => {
       <Hero />
       <About />
       <Marketing />
+      <Portfolio />
       <Serv />
       <Contact />
       <Footer />
