@@ -1,3 +1,26 @@
+.mainDiv {
+  background-image: url('https://img.freepik.com/free-vector/business-leader-standing-arrow-holding-flag-flat-vector-illustration-cartoon-people-training-doing-business-plan-leadership-victory-challenge-concept_74855-9812.jpg?w=740&t=st=1684305222~exp=1684305822~hmac=d4a44a33391c99393b23d2e34f31cf18218f42f8c6f9aaa6362f958ae6746965');
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainDiv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.content {
+  z-index: 8;
+}
 .btn {
   border: none;
   background-color: var(--secondColor);

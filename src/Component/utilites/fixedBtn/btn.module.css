@@ -1,0 +1,37 @@
+.whats {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    z-index: 99999;
+}
+.arrowContainer {
+       cursor: pointer;
+       position: fixed;
+       bottom: 10px;
+       z-index: 99999;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: var(--secondColor);
+       color: white;
+       width: 40px;
+       height: 40px;
+       border-radius: 50%;
+       -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+       -ms-border-radius: 50%;
+       -o-border-radius: 50%;
+       transition: 0.4s;
+       -webkit-transition: 0.4s;
+       -moz-transition: 0.4s;
+       -ms-transition: 0.4s;
+       -o-transition: 0.4s;
+}
+.show {
+    right: 10px;
+    opacity: 1;
+}
+.hide {
+    right: -200%;
+    opacity: 0;
+}

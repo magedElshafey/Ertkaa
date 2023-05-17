@@ -10,6 +10,8 @@ import ScrollTitle from "./Component/Scrolltitle/ScrollTitle";
 import Serv from "./Component/Services/Serv";
 import Contact from "./Component/contact/Contact";
 import Footer from "./Component/layout/footer/Footer";
+import FixedBtn from "./Component/utilites/fixedBtn/FixedBtn";
+import Meta from "./Component/utilites/meta/Meta";
 
 const App = () => {
   const [t, i18n] = useTranslation();
@@ -31,12 +33,12 @@ const App = () => {
   }, [i18n.language]);
   return (
     <div>
+      <Meta />
+      <FixedBtn />
       <Nav />
       <Hero />
-      <Stats />
       <About />
       <Marketing />
-     
       <Serv />
       <Contact />
       <Footer />

@@ -1,5 +1,5 @@
 // social media
-import face from "../assets/social/icons8-facebook-48.png";
+import face from "../assets/social/icons8-snapchat-a-multimedia-messaging-app-used-globally-48.png";
 import whats from "../assets/social/icons8-whatsapp-48.png";
 import insta from "../assets/social/icons8-instagram-48.png";
 import behance from "../assets/social/behance.png";
@@ -8,6 +8,10 @@ import developer from "../assets/about/developer.png";
 import marketing from "../assets/about/marketing.png";
 import ads from "../assets/about/ads (2).png";
 import shop from "../assets/about/e-commerce.png";
+// serv
+import seo from "../assets/seo.png";
+import social from "../assets/social-strategy.png";
+import market from "../assets/graph.png";
 export const navLinks = [
   {
     title: "Home",
@@ -15,15 +19,16 @@ export const navLinks = [
     path: "/",
   },
   {
-    title: "About Us",
-    ArabicTitle: "من نحن",
-    path: "#about",
-  },
-  {
     title: "Services",
     ArabicTitle: "خدماتنا",
     path: "#services",
   },
+  {
+    title: "About Us",
+    ArabicTitle: "من نحن",
+    path: "#about",
+  },
+
   {
     title: "Behance",
     ArabicTitle: "بيهانس",
@@ -143,6 +148,7 @@ export const marketDetails = [
 ];
 export const serv = [
   {
+    img: social,
     arabicTitle: "تعزيز التواجد على منصات السوشيال ميديا",
     englishTitle: "Enhancing presence on social media platforms.",
     arabicDesc:
@@ -151,9 +157,10 @@ export const serv = [
       "Defining the audience about the brand, increasing the number of customers, enhancing the relationship with them, generating publicity about the company, and increasing revenue by enhancing presence on social media platforms.",
     arabicStep: "الخطوة الاولي",
     englishStep: "first step",
-    delay : '400'
+    delay: "400",
   },
   {
+    img: market,
     arabicTitle: "حلول تسويقية مبتكرة",
     englishTitle: "Innovative marketing solutions.",
     arabicDesc:
@@ -162,9 +169,10 @@ export const serv = [
       "Do you want to market your website or business and are looking for the best companies to handle this task? Our team of professional marketers is ready to execute what you may need to achieve increased conversion rates and profits.",
     arabicStep: "الخطوة الثانية",
     englishStep: "second step",
-    delay : '500'
+    delay: "500",
   },
   {
+    img: seo,
     arabicTitle: "تحسين محركات البحث",
     englishTitle: "Improving search engines.",
     arabicDesc:
@@ -173,6 +181,6 @@ export const serv = [
       "Improving search engines is optimizing your website to appear in organic search results, which helps your company achieve a higher ranking in relevant searches. This makes it easier for many people to find your company and potentially become customers.",
     arabicStep: "الخطوة الثالثة",
     englishStep: "third step",
-    delay : '600'
+    delay: "600",
   },
 ];

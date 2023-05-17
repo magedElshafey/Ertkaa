@@ -5,8 +5,7 @@ import { useTranslation } from "react-i18next";
 import logo from "../../../assets/logo.jpg";
 import langIcon from "../../../assets/lang.svg";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { socialMedia } from "../../../fakers/data";
-import SocialMedia from "../../utilites/SocialMedia";
+import SocialMedia from "../../utilites/SocailMedia/SocialMedia";
 const Nav = () => {
   const [t, i18n] = useTranslation();
   const [showSideBar, setShowSideBar] = useState(false);

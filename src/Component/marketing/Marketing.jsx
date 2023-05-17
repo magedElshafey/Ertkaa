@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
-import * as animationData from "../../lotties/marketing.json";
+import * as animationData from "../../lotties/social-media-influencer.json";
 import { useTranslation } from "react-i18next";
 import { marketDetails } from "../../fakers/data";
 import style from "./marketing.module.css";
@@ -17,7 +17,7 @@ const Marketing = () => {
   };
 
   return (
-    <div className="container pt-5 mt-5">
+    <div id="about" className="container pt-5 mt-5">
       <div
         className="row align-items-center justify-content-center"
         data-aos="fade-up"
@@ -68,7 +68,7 @@ const Marketing = () => {
           data-aos-delay="500"
           className="col-12 col-md-6 mb-4 mb-md-0"
         >
-          <Lottie options={defaultOptions} height={450} width="100%" />
+          <Lottie options={defaultOptions} height={650} width="100%" />
         </div>
       </div>
     </div>

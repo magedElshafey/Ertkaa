@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./footer.module.css";
 import logo from "../../../assets/logo.jpg";
-import SocialMedia from "../../utilites/SocialMedia";
+import SocialMedia from "../../utilites/SocailMedia/SocialMedia";
 import { useTranslation } from "react-i18next";
 import hotLine from "../../../assets/maaroofff.png";
 const Footer = () => {
@@ -14,9 +14,7 @@ const Footer = () => {
           <div className="col-12 col-sm-6 col-md-3">
             <div className="d-flex flex-column align-items-center gap-3">
               <img src={logo} alt="logo/img" className={style.logo} />
-              <p className="text-white-50 mb-0">
-                Mansoura , El Dakahlia , Egypt
-              </p>
+              <p className="text-white-50 mb-0">القاهرة , مصر الجديدة</p>
               <div className="d-flex align-items-center gap-3">
                 <SocialMedia />
               </div>

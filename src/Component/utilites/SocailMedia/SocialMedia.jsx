@@ -1,5 +1,5 @@
 import React from "react";
-import { socialMedia } from "../../fakers/data";
+import { socialMedia } from "../../../fakers/data";
 import style from './social.module.css'
 const SocialMedia = () => {
   return (

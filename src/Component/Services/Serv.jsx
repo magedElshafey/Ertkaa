@@ -5,7 +5,7 @@ import { serv } from "../../fakers/data";
 const Serv = () => {
   const [t, i18n] = useTranslation();
   return (
-    <div id="services" className="container pt-5 mt-5">
+    <div className="container pt-5 mt-5">
       <h3
         data-aos="fade-up"
         data-aos-delay="400"
@@ -28,12 +28,20 @@ const Serv = () => {
             data-aos="fade-up"
             data-aos-delay={item.delay}
           >
-            <p className="fw-bold mb-3 text-white fs-3">
-              {i18n.language === "ar" ? item.arabicTitle : item.englishTitle}
-            </p>
-            <p className="lh text-white-50 mb-3">
-              {i18n.language === "ar" ? item.arabicDesc : item.englishDesc}
-            </p>
+            <div className="d-flex  gap-3">
+              <img alt="icon/img" src={item.img} className={style.img} />
+              <div>
+                <p className="fw-bold mb-3 text-white fs-5">
+                  {i18n.language === "ar"
+                    ? item.arabicTitle
+                    : item.englishTitle}
+                </p>
+                <p className="lh text-white-50 mb-3">
+                  {i18n.language === "ar" ? item.arabicDesc : item.englishDesc}
+                </p>
+              </div>
+            </div>
+
             <p className={`fw-bold ${style.step}`}>
               {i18n.language === "ar" ? item.arabicStep : item.englishStep}
             </p>

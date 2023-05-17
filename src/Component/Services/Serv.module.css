@@ -1,6 +1,12 @@
 .mainContainer {
-    width: 300px;
+    width: 350px;
+    height: 250px;
 }
 .step {
     color: var(--secondColor);
+}
+.img {
+    width: 50px;
+    height: 80px;
+    object-fit: contain;
 }
