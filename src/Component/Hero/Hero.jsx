@@ -4,23 +4,22 @@ import { useTranslation } from "react-i18next";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 const Hero = () => {
   const [t, i18n] = useTranslation();
-  
 
   return (
     <div className="pt-5 mt-5">
       <div data-aos="fade-down" data-aos-delay="400" className={style.mainDiv}>
         <div
-          className={`d-flex flex-column text-white  align-items-center  ${style.content}`}
+          className={`d-flex flex-column text-white  align-items-center ${style.content}`}
         >
           <h1
-            className={`mb-4 fs-2  fw-bolder ${
+            className={`mb-2  fs-5 fs-md-2  fw-bolder ${
               i18n.language === "ar" ? "text-md-end" : "text-md-start"
             } lh`}
           >
             {t("heroTitle")}
           </h1>
           <p
-            className={`text-white-50 lh text-center mb-3 ${
+            className={`text-white-50   lh  mb-3 ${
               i18n.language === "ar" ? "text-md-end" : "text-md-start"
             }`}
           >

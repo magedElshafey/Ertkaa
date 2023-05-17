@@ -68,7 +68,12 @@ const Marketing = () => {
           data-aos-delay="500"
           className="col-12 col-md-6 mb-4 mb-md-0"
         >
-          <Lottie options={defaultOptions} height={650} width="100%" />
+          <Lottie
+            isClickToPauseDisabled
+            options={defaultOptions}
+            height="50%"
+            width="70%"
+          />
         </div>
       </div>
     </div>

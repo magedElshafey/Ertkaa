@@ -29,7 +29,7 @@ const Nav = () => {
             shdow ? style.setShadow : style.removeShadow
           }`}
         >
-          <div className="container py-4  d-flex justify-content-between align-items-center">
+          <div className="container-fluid py-4  d-flex justify-content-between align-items-center">
             {/*logo container*/}
             <div>
               <img
@@ -40,7 +40,7 @@ const Nav = () => {
               />
             </div>
             {/*links container*/}
-            <ul className="d-flex align-items-center gap-5 fw-bold fs-5">
+            <ul className=" d-flex align-items-center gap-5 fw-bold fs-5">
               {navLinks.map((item, index) => (
                 <li key={index}>
                   {i18n.language === "ar" ? (
@@ -71,38 +71,6 @@ const Nav = () => {
                 {t("btnNav")}
               </a>
             </button>
-            <div className="dropdown ">
-              <div
-                className=" dropdown-toggle d-flex align-items-center gap-2"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                role="button"
-              >
-                <img alt="lang/img" src={langIcon} loading="lazy" />
-                <p className="text-white p-0 m-0 fs-4">{i18n.language}</p>
-              </div>
-
-              <ul className="dropdown-menu">
-                <li className={`dropdown-item ${style.lang}`}>
-                  {i18n.language}
-                </li>
-                {i18n.language === "ar" ? (
-                  <li
-                    onClick={() => i18n.changeLanguage("en")}
-                    className={`dropdown-item ${style.lang}`}
-                  >
-                    en
-                  </li>
-                ) : (
-                  <li
-                    onClick={() => i18n.changeLanguage("ar")}
-                    className={`dropdown-item ${style.lang}`}
-                  >
-                    ar
-                  </li>
-                )}
-              </ul>
-            </div>
           </div>
         </div>
       </div>
@@ -121,6 +89,14 @@ const Nav = () => {
                 className={style.logo}
               />
             </div>
+            <button className={style.btnMob}>
+              <a
+                className={`link ${style.btnText}`}
+                href="https://wa.me/+201022153359"
+              >
+                {t("btnNav")}
+              </a>
+            </button>
             {!showSideBar && (
               <AiOutlineMenu
                 onClick={() => setShowSideBar(true)}
@@ -174,55 +150,7 @@ const Nav = () => {
                 </ul>
               </div>
             </div>
-            <hr className={style.line} />
-            <div className="px-3 py-3 d-flex justify-content-between align-items-center">
-              <button className={style.btn}>
-                <a
-                  className={`link ${style.btnText}`}
-                  href="https://wa.me/+201022153359"
-                >
-                  {t("btnNav")}
-                </a>
-              </button>
-              <div className="dropdown ">
-                <div
-                  className=" dropdown-toggle d-flex align-items-center gap-2"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  role="button"
-                >
-                  <img alt="lang/img" src={langIcon} loading="lazy" />
-                  <p className="text-white p-0 m-0 fs-4">{i18n.language}</p>
-                </div>
 
-                <ul className="dropdown-menu">
-                  <li className={`dropdown-item ${style.lang}`}>
-                    {i18n.language}
-                  </li>
-                  {i18n.language === "ar" ? (
-                    <li
-                      onClick={() => {
-                        i18n.changeLanguage("en");
-                        setShowSideBar(false);
-                      }}
-                      className={`dropdown-item ${style.lang}`}
-                    >
-                      en
-                    </li>
-                  ) : (
-                    <li
-                      onClick={() => {
-                        i18n.changeLanguage("ar");
-                        setShowSideBar(false);
-                      }}
-                      className={`dropdown-item ${style.lang}`}
-                    >
-                      ar
-                    </li>
-                  )}
-                </ul>
-              </div>
-            </div>
             <hr className={style.line} />
             <div className="pt-3 d-flex justify-content-center align-items-center gap-2">
               <SocialMedia />

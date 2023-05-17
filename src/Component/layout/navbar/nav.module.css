@@ -15,12 +15,15 @@
     object-fit: contain;
    
 }
-.btn {
+.btn , .btnMob {
     background-color: var(--secondColor);
     border: none;
     padding: 7px 15px;
     height: 50px;
-    text-align: center;
+   text-align: center;
+}
+.btnMob {
+    width: 165px;
 }
 .btnText {
       color: var(--mainColor) !important;
