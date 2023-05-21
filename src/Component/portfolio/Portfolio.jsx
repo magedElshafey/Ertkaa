@@ -9,7 +9,7 @@ const Portfolio = () => {
 	const swiperOptions = {
 		loop: true,
 		centeredSlides: false,
-		spaceBetween: 2,
+		spaceBetween: 8,
 		navigation: true,
 		autoplay: {
 			delay: 5000,

@@ -5,12 +5,12 @@
 }
 
 :root {
-  --mainColor: #00172f;
-  --secondColor: #f9c747;
+  --mainColor: #30429b;
+  --secondColor: #f7ec13;
 }
 
 body {
-  background: linear-gradient(to bottom, #00172f 75%, #103160) !important;
+  background: linear-gradient(to bottom, var(--mainColor) 75%, #103160) !important;
   overflow-x: hidden !important;
   color: white;
   text-transform: capitalize;

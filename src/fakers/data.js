@@ -13,12 +13,12 @@ import seo from '../assets/seo.png';
 import social from '../assets/social-strategy.png';
 import market from '../assets/graph.png';
 // portfolio
-import port1 from '../assets/port-01.jpg';
-import port2 from '../assets/port-02 (3).jpg';
-import port3 from '../assets/port-03.jpg';
-import port4 from '../assets/port-04.jpg';
-import port5 from '../assets/port-05.jpg';
-import port6 from '../assets/port-06.jpg';
+import port1 from '../assets/porto-0.jpg';
+import port2 from '../assets/porto-01.jpg';
+import port3 from '../assets/porto-02.jpg';
+import port4 from '../assets/porto-03.jpg';
+import port5 from '../assets/porto-04.jpg';
+
 export const navLinks = [
 	{
 		title: 'Home',
@@ -102,7 +102,8 @@ export const about = [
 		title: 'Design and development of websites',
 		ArabicTitle: 'تصميم وتطوير المواقع الإلكترونية',
 		desc: 'If you are considering establishing an effective online presence, designing a great web interface for e-commerce, providing a unique user experience, or improving search engine rankings, as well as SEO goals',
-		arabicDesc: 'إذا كنت تفكر في إنشاء تواجد فعال لموقع الويب، تصميم واجهة الويب الرائعة للتجارة الإلكترونية، وتجربة مستخدم مميزة، أو تحسين التصنيف في محرك البحث، كذلك الأهداف الخاصة بال SEO.',
+		arabicDesc:
+			'إذا كان لديك طموح لإنشاء موقع إلكتروني، الحصول على تصميم واجهة جذابة تُظهر المحتوى وتجذب الزوار، تحتاج الوصول إلى جمهور أكبر، عملائك قادرين على العثور على المحتوى الذي يبحثون عنه بسهولة، وتوفير ساعات وقت في العثور على المعلومات المفيدة، ضمان أن يتم توافق الموقع مع المحركات البحثية، تجربة لائقة وجذابة للمستخدمين .',
 		delay: '400',
 	},
 	{
@@ -111,7 +112,7 @@ export const about = [
 		ArabicTitle: 'الحملات التسويقية والإعلان عبر الانترنت',
 		desc: 'If you are looking to efficiently advertise your business online, such as through search engines like Google, social media platforms like Snapchat, Twitter, TikTok, LinkedIn, Instagram, Facebook, email, and text messages',
 		arabicDesc:
-			'إذا كنت تتطلع إلى الإعلان بكفاءة لنشاطك التجاري عبر الإنترنت، مثل عبر محرك البحث جوجل، الشبكات الاجتماعية المثل سناب شات، تويتر، تيك توك، لينكد إن، انستجرام، فيس بوك، البريد الإلكتروني و الرسائل القصيرة',
+			'إذا كنت تبحث عن عملية تسويقية وإعلانية تهدف إلى الترويج للمنتجات والخدمات بجودة عالية، تشمل مجموعة متنوعة من الأدوات التسويقية مثل الإعلانات المدفوعة والبريد الإلكتروني والتسويق عبر وسائل التواصل الاجتماعي والتسويق بالمحتوى والتسويق بالبحث العضوي، معرفة دقيقة بالمستهلكين والسوق المستهدفة وحجم ونوع العملاء وروح المنافسة وأهداف الشركة، وإعداد استراتيجية تسويقية وإعلانية متكاملة وفعالة تتوافق مع هذه العوامل.',
 		delay: '500',
 	},
 	{
@@ -119,7 +120,8 @@ export const about = [
 		title: 'Social media management',
 		ArabicTitle: 'إدارة وسائل التواصل الاجتماعي',
 		desc: 'Social media in Saudi Arabia is a great opportunity for business revenue. If you conduct the right advertisements targeting the appropriate audience, you will achieve great business success',
-		arabicDesc: 'الشبكات الاجتماعية في السعودية هي فرصة كبيرة للايرادات التجارية فاذا قمت باجراء الاعلانات الصحيحة للجمهور المناسب ستحقق النجاح التجاري الكبير',
+		arabicDesc:
+			'نقدم عدة أساليب واستراتيجيات تستخدم في التسويق الرقمي، بأكثر من حلا مبتكرًا، تتضمن العديد من الأدوات والتقنيات مثل وسائل التواصل الاجتماعي والإعلانات على الإنترنت والتسويق بالبريد الإلكتروني ومحركات البحث حيث تمثل التفاعلات الرقمية والتواصل بين الشركة والعملاء أساس مستقبل الأعمال التجارية . ',
 		delay: '600',
 	},
 	{
@@ -127,7 +129,8 @@ export const about = [
 		title: 'Digital marketing strategies',
 		ArabicTitle: 'استراتيجيات التسويق الرقمي',
 		desc: 'We create successful digital marketing strategies for your business. As a result, you can achieve your specific goals through carefully selected marketing channels, including paid and earned advertising mediums',
-		arabicDesc: 'نقوم بإنشاء استراتيجيات تسويق رقمية ناجحة لعملك .. وبالتالي، لتحقيق أهدافك المحددة من خلال قنوات التسويق المختارة بعناية مثل وسائل الإعلان المدفوعة والمكتسبة',
+		arabicDesc:
+			'تعد إدارة وسائل التواصل الاجتماعي أداة مهمة لزيادة مستوى الوعي لدى الجمهور المستهدف وزيادة حضور الماركة عبر المنصات الاجتماعية مثل فيسبوك، تويتر، إنستجرام، كما ان تطوير المحتوى الملائم يلعب دورًا كبيرًا في نجاح الحملة الإعلامية مما يؤدي إلى زيادة الانتشار والتفاعل على المنصات الاجتماعية مما يعزز ايراداتك .',
 		delay: '700',
 	},
 ];
@@ -135,35 +138,47 @@ export const about = [
 export const marketDetails = [
 	{
 		title: 'Paid digital advertising campaigns.',
-		ArabicTitle: 'حملات الإعلانات الرقمية المدفوعة',
+		ArabicTitle: 'الإعلانات المدفوعة .',
 	},
 	{
 		title: 'Marketing analytics and consulting.',
-		ArabicTitle: 'التحليلات والاستشارات التسويقية',
+		ArabicTitle: ' التسويق عبر محركات البحث.',
 	},
 	{
 		title: 'Achieving the best possible results.',
-		ArabicTitle: 'الوصول إلى أفضل نتائج ممكنه',
+		ArabicTitle: 'التسويق عبر البريد الإلكتروني.',
 	},
 	{
 		title: 'Study and analysis of the target audience.',
-		ArabicTitle: 'دراسة وتحليل الجمهور المستهدف',
+		ArabicTitle: 'التسويق عبر الشبكات الإجتماعية.',
 	},
 	{
 		title: 'Content marketing solutions.',
-		ArabicTitle: 'حلول التسويق عبر المحتوى',
+		ArabicTitle: 'محتوى تسويقي فريد و شامل .',
 	},
 	{
 		title: 'Detailed advertising budget plan.',
-		ArabicTitle: 'خطة موضحة للميزانية الاعلانية',
+		ArabicTitle: 'دراسة وتحليل الأداء والجمهور .',
 	},
 	{
 		title: 'Development of e-marketing platforms.',
-		ArabicTitle: 'تطوير منصات التسويق الإلكتروني',
+		ArabicTitle: 'تحسين منصات التسويق الالكتروني .',
 	},
 	{
 		title: '24/7 technical support.',
-		ArabicTitle: '24/7 دعم فني',
+		ArabicTitle: 'مسار موضح للميزانية الاعلانية .',
+	},
+	{
+		title: '24/7 technical support.',
+		ArabicTitle: 'الحلول الرقمية والاستشارات التسويقية المبتكرة .',
+	},
+	{
+		title: '24/7 technical support.',
+		ArabicTitle: 'الوصول إلى أفضل نتائج موثوقة',
+	},
+	{
+		title: '24/7 technical support.',
+		ArabicTitle: 'تحديد المشكلة وحلها في أسرع وقت ممكن .',
 	},
 ];
 export const port = [
@@ -211,15 +226,6 @@ export const port = [
 		arabicDesc:
 			'. يُستخدم عادةً في تصميم الغرافيك وتخطيط الصفحة وتصميم النصوص. يعود أصله إلى العام 1500، حيث استخدم الطابعون نوعًا معينًا من النص لتعبئة المساحات الفارغة في العروض الطباعية. ليس له أي معنى ',
 		delay: '800',
-	},
-	{
-		img: port6,
-		title: 'product six',
-		arabicTitle: 'المنتج السادس',
-		desc: "s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
-		arabicDesc:
-			'. يُستخدم عادةً في تصميم الغرافيك وتخطيط الصفحة وتصميم النصوص. يعود أصله إلى العام 1500، حيث استخدم الطابعون نوعًا معينًا من النص لتعبئة المساحات الفارغة في العروض الطباعية. ليس له أي معنى ',
-		delay: '900',
 	},
 ];
 

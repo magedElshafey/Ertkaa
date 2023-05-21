@@ -6,7 +6,7 @@ const Hero = () => {
   const [t, i18n] = useTranslation();
 
   return (
-    <div className="pt-5 mt-5">
+    <div className="pt-5 mt-4">
       <div data-aos="fade-down" data-aos-delay="400" className={style.mainDiv}>
         <div
           className={`d-flex flex-column text-white  align-items-center ${style.content}`}

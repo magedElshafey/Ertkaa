@@ -27,7 +27,7 @@ const About = () => {
             } `}
           >
             <img className={style.img} alt="about/img" src={item.img} />
-            <h3 className="fw-bolder fs-5">
+            <h3 className="fw-bolder fs-5 lh">
               {i18n.language === "ar" ? item.ArabicTitle : item.title}
             </h3>
             <p className="text-black-50 lh">

@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./footer.module.css";
-import logo from "../../../assets/logo.jpg";
+import logo from "../../../assets/logo elqema.png";
 import SocialMedia from "../../utilites/SocailMedia/SocialMedia";
 import { useTranslation } from "react-i18next";
 import hotLine from "../../../assets/maaroofff.png";
