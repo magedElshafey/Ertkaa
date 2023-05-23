@@ -4,6 +4,9 @@ import logo from "../../../assets/logo elqema.png";
 import SocialMedia from "../../utilites/SocailMedia/SocialMedia";
 import { useTranslation } from "react-i18next";
 import hotLine from "../../../assets/maaroofff.png";
+import { AiOutlineWhatsApp, AiOutlineInstagram } from "react-icons/ai";
+import { FaBehance } from "react-icons/fa";
+import { BsSnapchat } from "react-icons/bs";
 const Footer = () => {
   const year = new Date().getFullYear();
   const [t] = useTranslation();
@@ -16,7 +19,10 @@ const Footer = () => {
               <img src={logo} alt="logo/img" className={style.logo} />
               <p className="text-white-50 mb-0">القاهرة , مصر الجديدة</p>
               <div className="d-flex align-items-center gap-3">
-                <SocialMedia />
+                <FaBehance size={50} className={style.icon} />
+                <BsSnapchat size={50} className={style.icon} />
+                <AiOutlineInstagram size={50} className={style.icon} />
+                <AiOutlineWhatsApp size={50} className={style.icon} />
               </div>
             </div>
           </div>
