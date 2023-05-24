@@ -2,27 +2,22 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: flex !important;
-  align-items: center !important;
-  width: 100vw;
+ width: 100vw;
   z-index: 100;
-  height: 60px;
-
+ background-color: #011529;
+   border-bottom: 1px solid var(--secondColor);
 }
 
 .logo {
-  width: 80px;
-  max-height: 100%;
+  width: 100px;
   object-fit: cover;
-
 }
-
 .btn,
 .btnMob {
   background-color: var(--secondColor);
   border: none;
   padding: 7px 15px;
-  height: 50px;
+
   text-align: center;
 }
 
@@ -164,14 +159,4 @@
 
 .line {
   color: #ddd;
-}
-
-.setShadow {
-  background-color: #011529;
-  border-bottom: 1px solid var(--secondColor);
-}
-
-.removeShadow {
-  background-color: transparent;
-  border-bottom: none;
 }

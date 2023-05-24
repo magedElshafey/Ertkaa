@@ -1,21 +1,17 @@
-import React from "react";
-import { socialMedia } from "../../../fakers/data";
+import React from 'react'
 import style from './social.module.css'
+import { AiOutlineWhatsApp, AiOutlineInstagram } from "react-icons/ai";
+import { FaBehance } from "react-icons/fa";
+import { BsSnapchat } from "react-icons/bs";
 const SocialMedia = () => {
   return (
-    <>
-      {socialMedia.map((item, index) => (
-        <a key={index} target="_blank" href={item.path}>
-          <img
-            alt="social/icon"
-            src={item.icon}
-            loading="lazy"
-            className={style.icon}
-          />
-        </a>
-      ))}
-    </>
+    <div className="d-flex align-items-center gap-3">
+      <FaBehance size={50} className={style.icon} />
+      <BsSnapchat size={50} className={style.icon} />
+      <AiOutlineInstagram size={50} className={style.icon} />
+      <AiOutlineWhatsApp size={50} className={style.icon} />
+    </div>
   );
-};
+}
 
-export default SocialMedia;
+export default SocialMedia

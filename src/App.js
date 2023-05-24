@@ -13,7 +13,7 @@ import FixedBtn from "./Component/utilites/fixedBtn/FixedBtn";
 import Meta from "./Component/utilites/meta/Meta";
 import Portfolio from "./Component/portfolio/Portfolio";
 import Statistics from "./Component/statistics/Statistics";
-import Rev from "./Component/rev/Rev";
+import Rev from "./Component/Rev/Rev";
 
 const App = () => {
   const [t, i18n] = useTranslation();
@@ -56,7 +56,7 @@ const App = () => {
           <About />
           <Serv />
           <Statistics />
-
+          <Rev />
           <Contact />
           <Footer />
         </div>

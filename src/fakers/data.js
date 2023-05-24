@@ -1,9 +1,4 @@
-// social media
 
-import whats from "../assets/social/whatsapp.png";
-import insta from "../assets/social/instagram.png";
-import behance from "../assets/social/behance.png";
-import snap from "../assets/social/snapchat.png";
 // about
 import developer from "../assets/about/developer.png";
 import marketing from "../assets/about/marketing.png";
@@ -20,11 +15,12 @@ import port3 from "../assets/porto-02.jpg";
 import port4 from "../assets/porto-03.jpg";
 import port5 from "../assets/porto-04.jpg";
 // rev
-import rev1 from "../assets/rev-01.jpg";
-import rev2 from "../assets/rev-02.jpg";
-import rev3 from "../assets/rev-03.jpg";
-import rev4 from "../assets/rev-04.jpg";
-import rev5 from "../assets/rev-05.jpg";
+import rev1 from '../assets/1.jpg'
+import rev2 from '../assets/2.jpg'
+import rev3 from '../assets/3.jpg'
+import rev4 from '../assets/4.jpg'
+import rev5 from '../assets/5.jpg'
+
 export const navLinks = [
   {
     title: "Home",
@@ -58,24 +54,7 @@ export const navLinks = [
     path: "https://www.google.com",
   },
 ];
-export const socialMedia = [
-  {
-    icon: behance,
-    path: "https://www.google.com",
-  },
-  {
-    icon: snap,
-    path: "https://www.google.com",
-  },
-  {
-    icon: insta,
-    path: "https://www.google.com",
-  },
-  {
-    icon: whats,
-    path: "https://wa.me/+201022153359",
-  },
-];
+
 export const stats = [
   {
     num: "+800",
@@ -273,4 +252,4 @@ export const serv = [
     delay: "600",
   },
 ];
-export const rev = [rev1, rev2, rev3, rev4, rev5];
+ export const rev = [rev1, rev2, rev3, rev4, rev5];

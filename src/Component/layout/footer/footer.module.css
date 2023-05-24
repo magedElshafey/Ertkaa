@@ -1,10 +1,16 @@
+.whats {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    z-index: 99999;
+}
 .footerContainer {
     width: 100vw;
     background-color: #011529;
 }
 .logo {
-    width: 75%;
-    height: 120px;
+    width: 100px;
+   
     object-fit: cover;
 }
 .footerLinksContainer , .footerLinks {
@@ -48,20 +54,4 @@
     font-weight: bold;
     color: var(--secondColor) !important;
     text-decoration: none !important;
-}
-.icon {
-    
-    color: white !important;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-}
-.icon:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
 }

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import style from "./btn.module.css";
-import whats from "../../../assets/social/icons8-whatsapp-48.png";
+
 import { AiOutlineArrowUp } from "react-icons/ai";
 const FixedBtn = () => {
   const [show, setShow] = useState(false);
@@ -16,12 +16,7 @@ const FixedBtn = () => {
   }, []);
   return (
     <div>
-      {/*whats btn*/}
-      <div className={style.whats}>
-        <a href="https://wa.me/+201022153359" target="_blank">
-          <img src={whats} alt="whats/logo" />
-        </a>
-      </div>
+     
       <div
         onClick={() =>
           window.scrollTo({

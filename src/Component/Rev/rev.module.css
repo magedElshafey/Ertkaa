@@ -1,0 +1,26 @@
+.ImgContainer {
+   display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+@media screen and (max-width : 767px) {
+  .ImgContainer {
+     height: 65vh;
+  }
+}
+.mainImg {
+     height: 34rem;
+     object-fit: contain;
+      width: 18rem !important;
+  
+    position: absolute;
+}
+.subImg {
+    height: 36rem;
+    width: 20rem;
+   
+    position: absolute;
+ 
+}
